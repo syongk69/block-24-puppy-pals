@@ -10,7 +10,8 @@ function App() {
   // console.log('Feature Puppy: ', featuredPup);
   return (
     <>
-      <div className="App">
+      <div>
+        <h1 className="logo.react">Puppy Pals</h1>
         {
           puppies.map((puppy) => {
             return (
@@ -19,7 +20,7 @@ function App() {
           })
         }
         { featPupId && (
-          <div>
+          <div className="detail">
             <h2>{featuredPup.name}</h2>
             <ul>
               <li>Age: {featuredPup.age}</li>
